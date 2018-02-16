@@ -1,0 +1,72 @@
+/* 
+    Author: Matt Britt
+    Date: 2/16/18
+    Description: NavBar.css is the styling file for the NavBar react component.
+*/
+
+nav{
+    position: fixed;
+    display: flex;
+justify-content: start;
+    align-items: center;
+    height: 80px;
+    width: 100vw;
+    background: rgba(0, 0, 0, .9);
+    color: white;
+
+    padding: 0;
+
+}
+
+
+
+img{
+  height: 70px;
+  margin: 5px;
+}
+
+h1{
+    margin: 2% 5% 2% 5%;
+   
+}
+
+a{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 200px;
+
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+
+a:hover:not(.active){
+    background: rgba(255,255,255,.7);
+    color: black;
+}
+
+
+div{
+    padding: 0;
+    margin: 0;
+    width: 100%; 
+}
+
+#logo{
+
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 300px;
+}
+
+.active{
+    background: rgba(0, 151, 157, .8);
+}
+
+.right{
+
+    margin-left: auto;
+  
+}
