@@ -12,20 +12,18 @@ var NavBarSettings = require('../settings/NavBar.json');
 export default class NavBar extends Component{
     render(){
         return (
-            <nav>
+            <nav id='navbar'>
                 
                 <div id='logo'>
-                    <img src={NavBarSettings.icon}
+                    <img id='logo-img' src={NavBarSettings.icon}
                         alt={NavBarSettings.alt} />
-                    <h1>About Arduino</h1>
+                    <h1 id='nav-h1'>About Arduino</h1>
                 </div>
-                    <a className='active' href='/'><div>Home</div></a>
-                    <a href='/software'><div>Software</div></a>
-                    <a href='/hardware'><div>Hardware</div></a>
-                    <a href='/projects'><div>Projects</div></a>
-                    <a href='/about' className='right'><div className='right'>About</div></a>
-                
-            
+                    <a className='nav-active nav-a' href='/'><div>Home</div></a>
+                    <a className='nav-a' href='/software'><div>Software</div></a>
+                    <a className='nav-a' href='/hardware'><div>Hardware</div></a>
+                    <a className='nav-a' href='/projects'><div>Projects</div></a>
+                    <a className='nav-a right' href='/about'><div className='right'>About</div></a>
             </nav>
         )
     }

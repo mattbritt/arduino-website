@@ -4,8 +4,10 @@
     Description: NavBar.css is the styling file for the NavBar react component.
 */
 
-nav{
+#navbar{
     position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
 justify-content: start;
     align-items: center;
@@ -20,17 +22,17 @@ justify-content: start;
 
 
 
-img{
+#logo-img{
   height: 70px;
   margin: 5px;
 }
 
-h1{
+#nav-h1{
     margin: 2% 5% 2% 5%;
    
 }
 
-a{
+.nav-a{
     display: flex;
     align-items: center;
     height: 100%;
@@ -41,13 +43,13 @@ a{
     font-weight: 900;
 }
 
-a:hover:not(.active){
+a:hover:not(.nav-active){
     background: rgba(255,255,255,.7);
     color: black;
 }
 
 
-div{
+.nav-a > div{
     padding: 0;
     margin: 0;
     width: 100%; 
@@ -61,7 +63,7 @@ div{
     width: 300px;
 }
 
-.active{
+.nav-active{
     background: rgba(0, 151, 157, .8);
 }
 
