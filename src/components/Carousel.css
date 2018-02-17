@@ -29,14 +29,16 @@
 
 .carousel-active {
     top: 0 !important;
-
+    
+    transition: 1s;
 }
 
+
 .carousel-ol li{
+
     box-sizing: border-box;
     position: absolute;
-    top: 1000px;
- 
+    top: 1000px; 
 }
 
 .carousel > p{

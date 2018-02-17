@@ -18,7 +18,8 @@ export default class Carousel extends Component{
         super();
 
         this.state = {
-            currentIndex: 0
+            currentIndex: 0,
+            lastPos: 'left'
         }
 
         this.leftClick = this.leftClick.bind(this);
@@ -64,7 +65,7 @@ var index = this.state.currentIndex;
     var carouselItems = items.map((element, index)=>{
         var thisClass = '';
         if(index === this.state.currentIndex){
-            thisClass = 'carousel-active';
+            thisClass = 'carousel-active fromLeft';
         }
         return <li className={thisClass} key={index}><CarouselItem data={element}/></li>;
     })
