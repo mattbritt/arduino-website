@@ -1,6 +1,27 @@
 /* 
     Author: Matt Britt
     Date: 2/17/18
-    Description: Carousel.css is the styling file for the Carousel react component.
+    Description: HomePage.css is the styling file for the HomePage react component.
 */
 
+#home-page{
+    position: relative;
+    z-index: 0;
+}
+
+#home-page h1{
+    font-size: 50px;
+    color: #b25a56;
+}
+
+#home-page #text{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+#text p{
+    width: 750px;
+    font-size: 20px;
+}

@@ -19,14 +19,14 @@ export default class HomePage extends Component{
     render(){
 
         return(
-            <div id='home-page'>
+            <div>
             <NavBar currentPage='home' />
-            <article>
+            <article id='home-page'>
             <section>
                 <h1>What Can You Do Do With An Arduino?</h1>
                 <Carousel />
             </section>
-            <section>
+            <section id='text'>
                 <h1>What Is An Arduino?</h1>
                 <p>An Arduino is a platform for learning and building electronics projects.
                       It is an ecosystem composed of hardware and software designed to encourage 
