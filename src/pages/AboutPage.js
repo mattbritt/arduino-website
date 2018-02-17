@@ -8,10 +8,18 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
+import NavBar from '../components/NavBar';
+
 export default class AboutPage extends Component{
     render(){
         return(
-            <h1>About Page</h1>
+            <div>
+                <NavBar currentPage='about' />
+                <article>
+
+                  <h1>About Page</h1>
+                </article>
+            </div>
         )
     }
 }

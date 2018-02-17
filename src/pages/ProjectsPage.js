@@ -7,10 +7,17 @@
 
 import React, {Component} from 'react';
 
+import NavBar from '../components/NavBar';
+
 export default class ProjectsPage extends Component{
     render(){
         return(
-            <h1>Projects Page</h1>
+            <div>
+                <article>
+                <NavBar currentPage='projects'/>
+                    <h1>Projects Page</h1>
+                </article>
+            </div>
         )
     }
 }

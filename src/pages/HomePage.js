@@ -8,12 +8,20 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
+import NavBar from '../components/NavBar';
 import Carousel from '../components/Carousel';
 
+import './HomePage.css';
+
 export default class HomePage extends Component{
+
+
     render(){
+
         return(
-            <article id='home-page'>
+            <div id='home-page'>
+            <NavBar currentPage='home' />
+            <article>
             <section>
                 <h1>What Can You Do Do With An Arduino?</h1>
                 <Carousel />
@@ -43,6 +51,7 @@ export default class HomePage extends Component{
 
             </section>
             </article>
+            </div>
         )
     }
 }

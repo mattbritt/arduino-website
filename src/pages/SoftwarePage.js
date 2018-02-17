@@ -7,10 +7,17 @@
 
 import React, {Component} from 'react';
 
+import NavBar from '../components/NavBar';
+
 export default class SoftwarePage extends Component{
     render(){
         return(
-            <h1>Software Page</h1>
+            <div>
+                    <NavBar currentPage='software' />
+                <article>
+                <h1>Software Page</h1>
+                </article>
+            </div>
         )
     }
 }

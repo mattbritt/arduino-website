@@ -12,6 +12,32 @@ var NavBarSettings = require('../settings/NavBar.json');
 
 export default class NavBar extends Component{
     render(){
+
+        var homeClass, softwareClass, hardwareClass, projectsClass, aboutClass;
+        homeClass = softwareClass = hardwareClass = projectsClass = aboutClass = 'nav-a';
+        aboutClass += ' right';
+    
+        switch(this.props.currentPage){
+            case 'home':
+                homeClass += ' nav-active';
+                break;
+            case 'software':
+                softwareClass += ' nav-active';
+                break;
+            case 'hardware':
+                hardwareClass += ' nav-active';
+                break;
+            case 'projects':
+                projectsClass += ' nav-active';
+                break;
+            case 'about':
+                aboutClass += ' nav-active';
+                break;
+        }
+
+
+
+
         return (
             <nav id='navbar'>
                 
@@ -20,11 +46,11 @@ export default class NavBar extends Component{
                         alt={NavBarSettings.alt} />
                     <h1 id='nav-h1'>About Arduino</h1>
                 </div>
-                    <Link to='/' className='nav-active nav-a' ><div>Home</div></Link>
-                    <Link to='/software' className='nav-a'><div>Software</div></Link>
-                    <Link to='/hardware' className='nav-a'><div>Hardware</div></Link>
-                    <Link to='/projects' className='nav-a'><div>Projects</div></Link>
-                    <Link to='/about' className='nav-a right' ><div className='right'>About</div></Link>
+                    <Link to='/' className={homeClass} ><div>Home</div></Link>
+                    <Link to='/software' className={softwareClass}><div>Software</div></Link>
+                    <Link to='/hardware' className={hardwareClass}><div>Hardware</div></Link>
+                    <Link to='/projects' className={projectsClass}><div>Projects</div></Link>
+                    <Link to='/about' className={aboutClass} ><div className='right'>About</div></Link>
             </nav>
         )
     }

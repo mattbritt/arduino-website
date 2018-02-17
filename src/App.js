@@ -14,12 +14,29 @@ import ProjectsPage from './pages/ProjectsPage';
 
 
 class App extends Component {
+
+    constructor(){
+      super();
+
+      this.state = {
+        currentPage: ''
+      }
+
+      this.setCurrentPage = this.setCurrentPage.bind(this);
+    }
+
+  setCurrentPage = function(page){
+    this.setState({
+      currentPage: page
+    })
+  }
+
+
+
   render() {
     return (
       <Router>
         <div className="App">
- 
-        <NavBar />
 
 
         <Route exact path='/' component={HomePage} />
