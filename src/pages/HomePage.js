@@ -28,24 +28,31 @@ export default class HomePage extends Component{
             </section>
             <section id='text'>
                 <h1>What Is An Arduino?</h1>
+                <img id='arduino-board' src='Arduino_Uno_-_R3.jpg' alt='Arduino Uno Board' />
                 <p>An Arduino is a platform for learning and building electronics projects.
                       It is an ecosystem composed of hardware and software designed to encourage 
                       education and innovation.  With the Arduino system it is easy to create 
                       intelligent, automated devices.</p>
+                <h1>It's Software</h1>
+                <img id='arduino-ide' src='Arduino IDE.png' alt='Arduino IDE' />
                 <p>The Arduino <Link to='/software'><strong>software</strong></Link> consists of 
                     a easy-to-use Integrated Development Environment (IDE) and custom libraries.
                     The IDE provides a way to quickly get started coding with baked in compilation
                     and upload utilities.  The custom libraries provide simplified access to 
                     underlying hardware and easy interfacing with common sensors and actuators.</p>
+                <h1>Plus Hardware</h1>
+                <img id='arduino-hardware' src='BarGraph_bb.png' alt='Arduino connected to leds' />
                 <p>The Arduino <Link to='/hardware'><strong>hardware</strong></Link> platform consists
                     of a variety of economical microcontroller boards that enable a plethora of projects. 
                      Each Arduino board has a variety of input and output pins, as well as facilities 
                       for dealing with both analog and digital signals.  Several types of interface are 
                       provided including I2C, SPI and USB.</p>
+                <h1>Times You</h1>
+                <img id='bulb' src='bulb.jpg' alt='Light Bulb' />
                 <p>What really matters is what you can do with it.  The carousel above shows 
                     a few select <Link to='/projects'><strong>projects</strong></Link> to give you a 
-                    broad ideal of the power of an Arduino-enabled system.  You will find more on the  
-                    <Link to='/projects'><strong>projects</strong></Link> page, but remember the sky's 
+                    broad ideal of the power of an Arduino-enabled system.  You will find more on 
+                    the <Link to='/projects'><strong>projects</strong></Link> page, but remember the sky's 
                     the limit when it comes to what you can create!
                 </p>
 
