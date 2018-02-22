@@ -10,12 +10,14 @@ import React, {Component} from 'react';
 import NavBar from '../components/NavBar';
 import Accordian from '../components/Accordian';
 
+import './SoftwarePage.css';
+
 export default class SoftwarePage extends Component{
     render(){
         return(
             <div>
                     <NavBar currentPage='software' />
-                <article>
+                <article id='software-page'>
                 <h1>Software Page</h1>
                 <Accordian />
                 </article>

@@ -1,3 +1,7 @@
+.accordian-div{
+    box-shadow: 2px 5px 10px;
+    font-size: 25px;
+}
 .accordian{
     background: #eee;
     color: #444;
@@ -8,15 +12,29 @@
     border: none;
     outline: none;
     transition: 0.4s;
+
+    font-size: 25px;
+}
+
+.accordian:after{
+    content: '\02795';
+   
+    color: #777;
+    float: right;
+    margin-left: 5px;
 }
 
 .active, .accordian:hover{
     background: #ccc;
 }
 
+.active:after{
+    content: '\2796';
+}
+
 .panel{
     padding: 0 18px;
-    background: white;
+    background: rgb(250,250,250);
    
     overflow: hidden;
     max-height: 0;

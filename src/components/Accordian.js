@@ -20,7 +20,7 @@ console.log(panel);
         panel.style.maxHeight = null;
     }
     else{
-        panel.style.maxHeight = '50px'//= panel.scrollHeight + 'px';
+        panel.style.maxHeight = panel.scrollHeight + 'px';
     }
 }
 
