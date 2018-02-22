@@ -1,3 +1,10 @@
+/* 
+    Author: Matt Britt
+    Date: 2/22/18
+    Description: Accordian.css is the styling file for the Accordian react component.
+    Credit: This is based on W3Schools https://www.w3schools.com/howto/howto_js_accordion.asp
+*/
+
 .accordian-div{
     box-shadow: 2px 5px 10px;
     font-size: 25px;

@@ -1,0 +1,47 @@
+/* 
+    Author: Matt Britt
+    Date: 2/22/18
+    Description: BoardLayout.css is the styling file the BoardLayout react component.
+*/
+
+#board-layout{
+    display: flex;
+    flex-direction: column;
+}
+
+#board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board > ul{
+    list-style: none;
+    text-align: left;
+}
+
+#board li{
+    background: grey;
+    color: white;
+    
+    margin: 1px;
+    padding: 10px;
+
+    font-size: 25px;
+    font-weight: 900;
+
+    cursor: pointer;
+}
+
+#board > ul > h3{
+    font-weight: bold;
+    color: grey;
+    text-align: center;
+    margin: 5px;
+}
+
+#board-text{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000066;
+}
