@@ -1,0 +1,25 @@
+.accordian{
+    background: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordian:hover{
+    background: #ccc;
+}
+
+.panel{
+    padding: 0 18px;
+    background: white;
+   
+    overflow: hidden;
+    max-height: 0;
+   
+     transition: max-height 0.2s ease-out;
+}

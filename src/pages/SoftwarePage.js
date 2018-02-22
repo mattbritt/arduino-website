@@ -8,6 +8,7 @@
 import React, {Component} from 'react';
 
 import NavBar from '../components/NavBar';
+import Accordian from '../components/Accordian';
 
 export default class SoftwarePage extends Component{
     render(){
@@ -16,6 +17,7 @@ export default class SoftwarePage extends Component{
                     <NavBar currentPage='software' />
                 <article>
                 <h1>Software Page</h1>
+                <Accordian />
                 </article>
             </div>
         )
