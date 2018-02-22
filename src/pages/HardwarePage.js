@@ -8,7 +8,6 @@
 import React, {Component} from 'react';
 
 import NavBar from '../components/NavBar';
-import Accordian from '../components/Accordian';
 import BoardLayout from '../components/BoardLayout';
 
 import './HardwarePage.css';
@@ -23,9 +22,12 @@ export default class HardwarePage extends Component{
             <div>
                 <NavBar currentPage='hardware' />
             <article id='hardware-page'>
-                <h1>Hardware Page</h1>
+                <h1>Explore The Hardware</h1>
                 <BoardLayout />
-                <Accordian />
+                
+                <h1>Shields</h1>
+                <p> Shields are circuit boards designed to fit the Arduino form factor.  Shields allow you to easily add capabilities to your Arduino</p>
+                <p>There are many, many shields available (there is a large community or Arduino enthusiasts!).  Here are some common examples</p>
             </article>
             </div>
         )

@@ -6,8 +6,14 @@
 
 #hardware-page{
     width: 750px;
+
+ 
 }
 
-#board-canvas{
 
+#hardware-page h1 {
+    font-size: 50px;
+    color: #b25a56;
+    margin: 10px;
 }
+

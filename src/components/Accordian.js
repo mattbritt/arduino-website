@@ -27,9 +27,19 @@ console.log(panel);
    
     render(){
 
+        var panels = [];
+
+        this.props.panels.forEach((element, index) => {
+
+         panels.push(<div key={index}>
+                <button className='accordian' onClick={this.handleClick}>{element.title}</button>
+            <div className='panel'>
+                {element.jsx}
+            </div></div>) ;
+        });
 
         return(
-            <div className='accordian-div'>
+          /*  <div className='accordian-div'>
                 <button className='accordian' onClick={this.handleClick}>Section 1</button>
                 <div className='panel'>
                     <p>blah blah blah</p>
@@ -45,6 +55,9 @@ console.log(panel);
                     <p>blah blah blah</p>
                 </div>
 
+            </div>*/
+            <div className='accordian-div'>
+                {panels}
             </div>
         )
     }
