@@ -6,7 +6,7 @@
 */
 
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 import NavBar from '../components/NavBar';
 import Carousel from '../components/Carousel';

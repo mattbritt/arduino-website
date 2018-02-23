@@ -5,4 +5,11 @@
 */
 #software-page{
     width: 750px;
+    text-align: left;
+}
+
+#software-page h1{
+    font-size: 50px;
+    color: #b25a56;
+    margin: 10px;
 }

@@ -2,7 +2,7 @@
     Author: Matt Britt
     Date: 2/22/18
     Description: BoardLayout.js is the implementation file for the BoardLayout
-                react component.
+                react component.  This component will show various parts of an Arduino board.
 */
 
 import React, {Component} from 'react';
@@ -10,6 +10,7 @@ import React, {Component} from 'react';
 import './BoardLayout.css';
 
 export default class BoardLayout extends Component{
+// constructor -- setup state and bind this
   constructor(){
       super();
 
@@ -17,13 +18,15 @@ export default class BoardLayout extends Component{
 
       this.handleClick = this.handleClick.bind(this);
   }
-  
+ 
+  // aftercomponent mounts we needs to load image to canvas
     componentDidMount(){
         var canvas = document.getElementById('board-canvas');
         var context = canvas.getContext('2d');
-        context.imageSmoothingEnabled = false;
+
         var img = new Image();
-        console.log('did update');
+
+        // when img loads, draw image to canvas and save it to state so we can refresh after drawing
         img.onload = ()=>{
             context.drawImage(img, 0,0, canvas.width, canvas.height);
             this.setState({imageData: context.getImageData(0,0,canvas.width, canvas.height)})
@@ -32,15 +35,16 @@ export default class BoardLayout extends Component{
         img.src = 'Uno-top view.jpg';
     }
   
-
+// handles clicks on our list items -- causes red boxes to indicate the parts of the Arduino
 handleClick = function(event){
-   
+
     var canvas = document.getElementById('board-canvas');
     var context = canvas.getContext('2d');
 
     var rectArr = [];
     var text = '';
 
+    // what we highlight will depend on what li was clicked
     switch(event.target.id){
         case 'communication':
             rectArr.push({ x: 65, y: 85, w: 150, h: 100});
@@ -64,11 +68,13 @@ handleClick = function(event){
             rectArr.push({ x: 350, y: 355, w: 115, h: 35});
             text = 'Arduino can be powered via USB or by a standard wall adaptor.  It has built in voltage regulators to supply power to many common peripherals.  Battery power can also be used';
         break;
+        default:
     }
 
-    // restore canvas
+    // restore canvas (clear reactangles)
     context.putImageData(this.state.imageData, 0,0);
 
+    // draw new rectangles
     rectArr.forEach((elem)=>{
         context.beginPath();
         context.rect(elem.x, elem.y, elem.w, elem.h);
@@ -77,8 +83,8 @@ handleClick = function(event){
         context.stroke();
     })
 
+    // output description text
     document.getElementById('board-text').textContent = text;
-
 }
 
     render(){
@@ -100,5 +106,4 @@ handleClick = function(event){
             </div>
         )
     }
-
 }

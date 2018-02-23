@@ -5,7 +5,7 @@
 */
 
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import './NavBar.css'
 
 var NavBarSettings = require('../settings/NavBar.json');
@@ -33,6 +33,7 @@ export default class NavBar extends Component{
             case 'about':
                 aboutClass += ' nav-active';
                 break;
+            default:
         }
 
 
