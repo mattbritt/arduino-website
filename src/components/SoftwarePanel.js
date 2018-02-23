@@ -10,15 +10,37 @@ import React, {Component} from 'react';
 import './SoftwarePanel.css';
 
 export default class SoftwarePanel extends Component{
+    constructor(){
+        super();
+
+        this.state = {code: ''};
+    
+    }
+
     render(){
+
+            var downloadStr = 'http://localhost:5645/assets/' + this.props.data.filename;
+
         return (
             <div className='software-panel-div'>
-                <div className='scroll-box'>
-                    {this.props.data.code}
-                </div>
+                <textarea className='scroll-box'
+                    value={this.state.code}
+                    readOnly>
+            
+                </textarea>
                     <img src={this.props.data.imgSrc} alt={this.props.data.imgAlt} className='software-panel-img' />
-                    <button className='software-panel-button'>Download Source</button>
+                    <form method='get' action={downloadStr}>
+                        <button className='software-panel-button'>Download Source</button>
+                    </form>
             </div>
         )
     }
-}
+
+    componentDidMount(){
+        fetch('http://localhost:5645/softwarePanel/?file=' + this.props.data.filename)
+            .then((data)=>{
+                data.text().then((text)=>this.setState({
+                    code: text
+            })
+    )})
+}}
