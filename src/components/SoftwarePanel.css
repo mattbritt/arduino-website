@@ -1,0 +1,42 @@
+/* 
+    Author: Matt Britt
+    Date: 2/22/18
+    Description: SoftwarePanel.css is the styling file the SoftwarePanel component.
+*/
+
+.software-panel-div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-box{
+    border: 2px solid black;
+    width: 400px;
+    height: 350px;
+    overflow: auto;
+    margin: 20px 20px 20px 0;
+    padding: 5px;
+
+    font-size: 15px;
+}
+
+
+.software-panel-img{
+    align-self: flex-start;
+
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+
+}
+
+.software-panel-button{
+    position: absolute;
+    left: 435px;
+    top: 330px;
+    height: 50px;
+
+    font-weight: bold;
+}

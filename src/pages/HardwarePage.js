@@ -51,20 +51,25 @@ export default class HardwarePage extends Component{
             <div>
                 <NavBar currentPage='hardware' />
             <article id='hardware-page'>
+            <section>
                 <h1>Explore The Hardware</h1>
                 <BoardLayout />
-                
+                </section>
+                <section>
                 <h1>Shields</h1>
                 <p> Shields are circuit boards designed to fit the Arduino form factor.  Shields allow you to easily add capabilities to your Arduino</p>
                 <p>There are many, many shields available (there is a large community or Arduino enthusiasts!).  Here are some common examples</p>
                 <Accordian panels={panels} />
+                </section>
                 <br />
+                <section>
                 <h1>Beyond Shields</h1>
                 <p>Shields are a great way of getting started, but what if there isn't a shield available for what you want to do?</p>
                 <p>Well, you've got options!</p>
                 <p>You can interface with almost any part using bread-board, proto-boards or even your own custom PCB.</p>
                 <p>You can even create your own shields, if you want.  The Arduino hardware exposes pins that allow you to connect to most common devices and the software libraries make it simple to communicate with them.</p>
                 <p>Arduino is a fully open-source platform, including the hardware.  This means that all schematics are available and you can tweak the design to your liking.</p>
+                </section>
                 <br />
             </article>
             </div>
