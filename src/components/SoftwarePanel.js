@@ -14,12 +14,12 @@ export default class SoftwarePanel extends Component{
         super();
 
         this.state = {code: ''};
-    
     }
 
     render(){
-
-            var downloadStr = 'http://localhost:5645/assets/' + this.props.data.filename;
+        
+        // create link to file download
+        var downloadStr = 'http://localhost:5645/assets/' + this.props.data.filename;
 
         return (
             <div className='software-panel-div'>
@@ -37,6 +37,7 @@ export default class SoftwarePanel extends Component{
     }
 
     componentDidMount(){
+        // fetch file text from our express server
         fetch('http://localhost:5645/softwarePanel/?file=' + this.props.data.filename)
             .then((data)=>{
                 data.text().then((text)=>this.setState({

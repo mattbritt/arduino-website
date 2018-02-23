@@ -13,24 +13,27 @@ import SoftwarePanel from '../components/SoftwarePanel';
 
 import './SoftwarePage.css';
 
+var blink = require('./softwarePanels/blinkPanel.json');
+var knob = require('./softwarePanels/knobPanel.json');
+var remote = require('./softwarePanels/remotePanel.json');
+
 export default class SoftwarePage extends Component{
+
 
 
 
     render(){
 
         // setup panels for Accordian
-        var testPanelObj = {
-           filename: 'blink.ino',
-          title: 'Blink',
-          imgSrc: 'led-blink.gif',
-          imgAlt: 'Blinking LED'
-        }
         
-        var testPanel = [{title: testPanelObj.title,
-        jsx: <SoftwarePanel data={testPanelObj} />}]
-
-console.log(testPanel)
+        var testPanel = [{title: blink.title,
+        jsx: <SoftwarePanel data={blink} />},
+        {title: knob.title,
+            jsx: <SoftwarePanel data={knob} />},
+        {title: remote.title,
+            jsx: <SoftwarePanel data={remote} />},
+        
+        ]
 
         return(
             <div>
