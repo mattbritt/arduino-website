@@ -55,6 +55,19 @@ export default class SoftwarePage extends Component{
                 <Accordian panels={testPanel}/>
                 </section>
                 <br />
+                <section>
+                <h1>Arduino IDE</h1>
+                <img src='Arduino IDE.png' alt='Arduino IDE'/>
+                <p>The Arduino IDE will allow you to quickly program your Arduino boards.</p>
+                <h3>The IDE is available in 3 versions:</h3>
+                <ul>
+                    <li>Standard Installation - download to your computer</li>
+                    <li>Non Admin Installation - for Windows users without admin access</li>
+                    <li>Arduino Web Editor - Online IDE that allows you to work in the cloud</li>
+                </ul>
+                <p>For more information see the official <a href='https://www.arduino.cc/en/Main/Software' target='_blank' rel='noopener noreferrer'>Arduino Software Page</a></p>
+                </section>
+                <br />
                 </article>
             </div>
         )

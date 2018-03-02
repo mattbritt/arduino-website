@@ -1,0 +1,30 @@
+{"projects":[
+    {"imgSrc":"word clock.jpg",
+    "alt": "Arduino Word Clock",
+    "text": "Arduino Word Clock",
+    "link": "http://www.instructables.com/id/The-Word-Clock-Arduino-version/"},
+
+    {"imgSrc":"vision wand.jpg",
+        "alt": "Persistence of Vision Wand",
+        "text": "Persistence of Vision Wand",
+        "link": "http://www.instructables.com/id/Persistence-of-Vision-Wand/"},
+
+        {"imgSrc":"inebriator.png",
+            "alt": "The Inebriator",
+            "text": "The Inebriator",
+            "link": "http://www.theinebriator.com/"},
+     {"imgSrc":"line follower.webp",
+            "alt": "Line Follower Robot",
+            "text": "Line Follower Robot",
+            "link": "https://maker.pro/projects/arduino/make-line-follower-robot"},
+    {"imgSrc":"robot snake.jpg",
+            "alt": "Robot Snake",
+            "text": "Robot Snake",
+            "link": "http://www.instructables.com/id/Make-a-swimming-Robo-Snake/"},
+    {"imgSrc":"joystick.jpg",
+            "alt": "Game Console",
+            "text": "Game Console",
+            "link": "https://www.jaycar.com.au/arcade-joystick",
+            "color": "black"}
+
+]}

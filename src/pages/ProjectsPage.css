@@ -1,0 +1,13 @@
+/* 
+    Author: Matt Britt
+    Date: 3/2/18
+    Description: ProjectPage.css is the styling file for the ProjectPage react component.
+*/
+
+.grid-container{
+    display: grid;
+
+    grid-template-columns: auto auto auto;
+
+    grid-gap: 50px;
+}
