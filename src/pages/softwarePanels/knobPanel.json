@@ -1,5 +1,6 @@
 {
     "title": "Knob - Use A Knob To Control A Motor",
+    "credit":"http://www.instructables.com/id/Motorized-Correction-Collar-for-Microscope-Objecti/",
     "filename": "knob.ino",
     "imgSrc": "knob.gif",
     "imgAlt": "Turning a knob to control a servo motor"

@@ -7,12 +7,21 @@
     "desc": "The Inebriator is an Arduino controlled robot bartender that mixes drinks in front of you.  No tip required!"
     },
     {
-        "img": "arduino.png",
-        "alt": "The Inebriator 2 - Another Robot bartender",
+        "img": "watchduino.jpg",
+        "alt": "Watchduino - An Arduino-powered smartwatch.",
         "link": "",
-        "credit": "https://blog.arduino.cc/2016/05/05/5-robotic-bartenders-to-celebrate-cinco-de-mayo/",
-        "title": "The Inebriator 2",
-        "desc": "The Inebrn Arduino controlled robot bartender that mixes drinks in front of you.  No tip required!"
-        }
+        "credit": "https://hackaday.io/project/7244-watchduino2",
+        "title": "Watchduino",
+        "desc": "Watchduino - An Arduino-powered smartwatch."
+        },
+        {
+            "img": "robot snake.jpg",
+            "alt": "Robot snake",
+            "link": "",
+            "credit": "http://www.instructables.com/id/Make-a-swimming-Robo-Snake/",
+            "title": "Robo Snake",
+            "desc": "Robo Snake is a snake-like robot created to explore alternative motililty."
+            }
+    
 
 ]

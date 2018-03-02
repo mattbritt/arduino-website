@@ -1,0 +1,15 @@
+/* 
+    Author: Matt Britt
+    Date: /18
+    Description: AboutPage.css is the styling file the AboutPage.
+*/
+
+#about-page-h1{
+    font-size: 50px;
+    color: #b25a56;
+}
+
+#about-page-p-div{
+    width: 750px;
+    text-align: left;
+}

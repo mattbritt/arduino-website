@@ -29,6 +29,7 @@ export default class HomePage extends Component{
             <section id='text'>
                 <h1>What Is An Arduino?</h1>
                 <img id='arduino-board' src='Arduino_Uno_-_R3.jpg' alt='Arduino Uno Board' />
+                    <span>Image from Wikipedia</span>
                 <p>An Arduino is a platform for learning and building electronics projects.
                       It is an ecosystem composed of hardware and software designed to encourage 
                       education and innovation.  With the Arduino system it is easy to create 
@@ -42,6 +43,7 @@ export default class HomePage extends Component{
                     underlying hardware and easy interfacing with common sensors and actuators.</p>
                 <h1>Plus Hardware</h1>
                 <img id='arduino-hardware' src='BarGraph_bb.png' alt='Arduino connected to leds' />
+                <span>Image from http://androidmafia.ru/video/nW_k-VSYOU8</span>
                 <p>The Arduino <Link to='/hardware'><strong>hardware</strong></Link> platform consists
                     of a variety of economical microcontroller boards that enable a plethora of projects. 
                      Each Arduino board has a variety of input and output pins, as well as facilities 
@@ -49,6 +51,7 @@ export default class HomePage extends Component{
                       provided including I2C, SPI and USB.</p>
                 <h1>Times You</h1>
                 <img id='bulb' src='bulb.jpg' alt='Light Bulb' />
+                <span>Image from http://thepix.info/incandescent-light-bulbs-2017-movies/</span>
                 <p>What really matters is what you can do with it.  The carousel above shows 
                     a few select <Link to='/projects'><strong>projects</strong></Link> to give you a 
                     broad ideal of the power of an Arduino-enabled system.  You will find more on 

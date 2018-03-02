@@ -1,5 +1,6 @@
 {
     "title": "Remote - Read A Remote Control",
+    "credit": "http://farhek.com/jd/m7v1676/i-for/66ud76/",
     "filename": "remote.ino",
     "imgSrc": "remote.gif",
     "imgAlt": "Using a remote control with an Arduino."

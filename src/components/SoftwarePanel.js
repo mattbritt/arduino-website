@@ -28,10 +28,15 @@ export default class SoftwarePanel extends Component{
                     readOnly>
             
                 </textarea>
+                    <div className='img-panel-div'>
                     <img src={this.props.data.imgSrc} alt={this.props.data.imgAlt} className='software-panel-img' />
+                    
+                    <span style={{fontSize: '7px', margin: '10px'}}>{this.props.data.credit}</span>
+                   </div>
                     <form method='get' action={downloadStr}>
                         <button className='software-panel-button'>Download Source</button>
                     </form>
+                   
             </div>
         )
     }

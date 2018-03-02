@@ -22,6 +22,7 @@ export default class HardwarePage extends Component{
                         jsx: (
                             <div>
                                 <img src='motor.jpg' alt='motor controller shield' width='100%'/>
+                                <span style={{fontSize:'10px'}}>Image from Wikipedia</span>
                                 <p>This Motor shield allows the Arduino to control electric motors.</p>
                             </div>
                         )},
@@ -29,6 +30,7 @@ export default class HardwarePage extends Component{
                         jsx: (
                             <div>
                                 <img src='terminal.jpg' alt='screw terminal shield' width='100%'/>
+                                <span style={{fontSize:'10px'}}>Image from Wikipedia</span>
                                 <p>The Screw Terminal Shield makes it easy to secure connections to the Arduino.</p>
                             </div>
                         )},
@@ -36,6 +38,7 @@ export default class HardwarePage extends Component{
                         jsx: (
                             <div>
                                 <img src='logger.jpg' alt='data logger shield' width='100%'/>
+                                <span style={{fontSize:'10px'}}>Image from Wikipedia</span>
                                 <p>This shield provides both an SD card and a Real-time clock that can be used to timestamp data readings as they are saved to the SD card.</p>
                             </div>
                         )},
@@ -43,6 +46,7 @@ export default class HardwarePage extends Component{
                         jsx: (
                             <div>
                                 <img src='tft.jpg' alt='tft lcd screen shield' width='100%'/>
+                                <span style={{fontSize:'10px'}}>Image from Wikipedia</span>
                                 <p>This one provides a color LCD screen for Arduino output.</p>
                             </div>
                         )} ]
@@ -54,6 +58,7 @@ export default class HardwarePage extends Component{
             <section>
                 <h1>Explore The Hardware</h1>
                 <BoardLayout />
+                <span style={{textJustify:"center"}}>Image from https://www.robotistan.com/orjiginal-arduino-uno-r3-new-version</span>
                 </section>
                 <section>
                 <h1>Shields</h1>
