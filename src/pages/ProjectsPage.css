@@ -4,9 +4,18 @@
     Description: ProjectPage.css is the styling file for the ProjectPage react component.
 */
 
+#projects-page-h1{
+    font-size: 50px;
+    color: #b25a56;
+}
+
+#projects-page-p{
+    margin: 50px;
+}
+
 .grid-container{
     display: grid;
-
+    justify-items: center;
     grid-template-columns: auto auto auto;
 
     grid-gap: 50px;

@@ -25,6 +25,40 @@
             "alt": "Game Console",
             "text": "Game Console",
             "link": "https://www.jaycar.com.au/arcade-joystick",
-            "color": "black"}
+            "color": "black"},
+
+            {"imgSrc":"HMD Multimeter.JPG",
+                "alt": "HMD Multimeter",
+                "text": "HMD Multimeter",
+                "link": "https://hackaday.io/project/12211-arduino-glasses-a-hmd-for-multimeter",
+                "color": "black"},
+
+            {"imgSrc":"watchduino.jpg",
+                "alt": "Arduino SmartWatch",
+                "text": "Arduino SmartWatch",
+                "link": "https://hackaday.io/project/7244-watchduino2"},
+                
+            {"imgSrc":"niryo one.png",
+                "alt": "Niryo One Robot Arm",
+                "text": "Niryo One Robot Arm",
+                "link": "https://hackaday.io/project/19081-niryo-one",
+                "color": "black"},
+                
+            {"imgSrc":"farmbot.jpg",
+                "alt": "FarmBot Robot Farmer",
+                "text": "FarmBot Robot Farmer",
+                "link": "https://hackaday.io/project/2552-farmbot-open-source-cnc-farming"},
+
+      
+                {"imgSrc":"timelapse.JPG",
+                    "alt": "TimeLapse Photo Rig",
+                    "text": "TimeLapse Photo Rig",
+                    "link": "https://hackaday.io/project/1909-timelapse-rig"},
+                    
+    
+                {"imgSrc":"eeg.jpg",
+                    "alt": "Portable EEG",
+                    "text": "Portable EEG",
+                    "link": "https://hackaday.io/project/257-portable-eeg"}  
 
 ]}
