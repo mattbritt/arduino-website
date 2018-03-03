@@ -44,11 +44,32 @@ export default class SoftwarePanel extends Component{
     }
 
     componentDidMount(){
-        // fetch file text from our express server
+/*        // fetch file text from our express server
         fetch( settings.url + '/softwarePanel/?file=' + this.props.data.filename)
             .then((data)=>{
                 data.text().then((text)=>this.setState({
                     code: text
             })
-    )})
+    )})*/
+    console.log('componentDidMount')
+    var req = new XMLHttpRequest();
+    var url = settings.url + '/softwarePanel/?file=' + this.props.data.filename;
+
+    req.open('GET', url, true);
+
+    req.addEventListener('load', function(){
+        if(req.status >= 200 && req.status < 400){
+            var response = req.responseText;
+            this.setState({ code: response});
+        }
+        else 
+        {
+            console.log('Error: ', req.statusText);
+        }
+   
+    }.bind(this));
+
+    req.send(null);
+
+
 }}
