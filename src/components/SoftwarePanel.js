@@ -9,6 +9,8 @@ import React, {Component} from 'react';
 
 import './SoftwarePanel.css';
 
+import settings from '../settings/SoftwarePanelGET.json';
+
 export default class SoftwarePanel extends Component{
     constructor(){
         super();
@@ -19,7 +21,7 @@ export default class SoftwarePanel extends Component{
     render(){
         
         // create link to file download
-        var downloadStr = 'http://localhost:5645/assets/' + this.props.data.filename;
+        var downloadStr = settings.url + '/assets/' + this.props.data.filename;
 
         return (
             <div className='software-panel-div'>
@@ -43,7 +45,7 @@ export default class SoftwarePanel extends Component{
 
     componentDidMount(){
         // fetch file text from our express server
-        fetch('http://localhost:5645/softwarePanel/?file=' + this.props.data.filename)
+        fetch( settings.url + '/softwarePanel/?file=' + this.props.data.filename)
             .then((data)=>{
                 data.text().then((text)=>this.setState({
                     code: text
